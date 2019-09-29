@@ -12,7 +12,10 @@ foreach ($names as $i => $nm):
 endforeach;
 
 if (count($present) > 0):
-    echo json_encode($present);
+    header("Content-Type: text/plain");
+    foreach ($present as $field_name => $field_value):
+        echo "$field_name => $field_value\n";
+    endforeach;
 endif;
 
 ?>
