@@ -24,28 +24,28 @@
         <tr>
             <td>1</td>
             <td>Email</td>
-            <td><input type="email" name="email" placeholder="address@server.com" required>*</td>
+            <td><input type="email" name="email" placeholder="address@server.com" required tabindex="1">*</td>
         </tr>
             <tr>
                 <td>2</td>
                 <td>First Name</td>
-                <td><input type="text" name="first-name" placeholder="Dmytro" required>*</td>
+                <td><input type="text" name="first-name" placeholder="Dmytro" required tabindex="2">*</td>
             </tr>
             <tr>
                 <td>3</td>
                 <td>Last Name</td>
-                <td><input type="text" name="last-name" placeholder="Myskovets"required>*</td>
+                <td><input type="text" name="last-name" placeholder="Myskovets"required tabindex="3">*</td>
             </tr>
             <tr>
                 <td>4</td>
                 <td><label for="date">Date of birth</label></td>
-                <td><input type="date" name="birth-date" id="date"></td>
+                <td><input type="date" name="birth-date" id="date" tabindex="4"></td>
             </tr>
             <tr>
                 <td>5</td>
                 <td>Sex</td>
                 <td>
-                    <label for="he">He</label><input name="sex" type="radio" value="He" id="he">
+                    <label for="he">He</label><input name="sex" type="radio" value="He" id="he" tabindex="5">
                     <label for="she">She</label><input name="sex" type="radio" value="She" id="she">
                     <label for="it">It</label><input name="sex" type="radio" value="It" checked id="it">
                 </td>
@@ -54,7 +54,7 @@
                 <td>6</td>
                 <td>City and Street</td>
                 <td><label for="city">City</label>
-                    <select name="city" id="city">
+                    <select name="city" id="city" tabindex="6">
                         <option value="Rivne">Rivne</option>
                         <option value="Lviv">Lviv</option>
                         <option value="Ternopil">Ternopil</option>
@@ -67,43 +67,43 @@
                 <td>7</td>
                 <td>Skills</td>
                 <td>
-                    <input type="checkbox" name="Skills" value="" id="1" disabled="disabled"> <label for="1">Чесність</label>
-                    <input type="checkbox" name="Skills" value="" id="2"> <label for="2">Знаю ПХП</label>
-                    <input type="checkbox" name="Skills" value="" id="3"> <label for="3">Розум</label>
-                    <input type="checkbox" name="Skills" value="" id="4"> <label for="4">Кмітливість</label>
-                    <input type="checkbox" name="Skills" value="" id="5"> <label for="5">Стаміна</label>
+                    <input type="checkbox" name="Skills1" value="chesnist" id="1" disabled="disabled"> <label for="1" tabindex="7">Чесність</label>
+                    <input type="checkbox" name="Skills2" value="php" id="2"> <label for="2">Знаю ПХП</label>
+                    <input type="checkbox" name="Skills3" value="mind" id="3"> <label for="3">Розум</label>
+                    <input type="checkbox" name="Skills4" value="savvy" id="4"> <label for="4">Кмітливість</label>
+                    <input type="checkbox" name="Skills5" value="stamina" id="5"> <label for="5">Стаміна</label>
                 </td>
             </tr>
             <tr>
                 <td>8</td>
                 <td><label for="phone">Phone Number</label></td>
                 <td>
-                    <input type="tel" id="phone" name="phone" placeholder="mobile phone number" id="phone">
+                    <input type="tel" id="phone" name="phone" placeholder="mobile phone number" id="phone" maxlength="13" tabindex="8">
                 </td>
             </tr>
             <tr>
                 <td>9</td>
                 <td><label for="passwd">Password</label></td>
-                <td><input type="password" name="password" id="passwd" placeholder="password"></td>
+                <td><input type="password" name="password" id="passwd" placeholder="password" tabindex="9"></td>
             </tr>
         </tbody>
         <tfoot>
             <tr>
                 <td colspan="3">
-                    Дякую всім вельми, що пройшли се файне анкетування до самого самого  самого самого <br>
+                    Дякую всім вельми, що пройшли се файне анкетування до самого самого <br>  самого самого
                     самого самого самого самого самого самого кінця
                 </td>
             </tr>
             <tr>
                 <td colspan="3">
                     <label for="vidgyk">А тут ви можете залишити свій позитивний відгук:</label> <br>
-                    <textarea name="vidguk" id="vidguk" cols="100" rows="5" style="resize: none" id="vidgyk"></textarea>
+                    <textarea name="vidguk" id="vidgyk" cols="50" rows="5" style="resize: none" tabindex="10"></textarea>
                 </td>
             </tr>
             <tr>
                 <td colspan="3">
-                    <button type="submit">Відправити результати анкетування на сервер</button>
-                    <button type="reset">Очистити форму</button>
+                    <button type="submit" tabindex="11">Відправити результати анкетування на сервер</button>
+                    <button type="reset" tabindex="12">Очистити форму</button>
                 </td>
             </tr>
         </tfoot>
