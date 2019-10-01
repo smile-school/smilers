@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 align="center">Application form</h1>
+    <form enctype="multipart/form-data" method="post">
+        <table border="2" width="70%" height="150" align="center" cellspacing="1" bgcolor="lightgrey">
+            <tr height="50" align="center">
+                <td bgcolor="white" width="40"> 1 </td>
+                <td>
+                    <label for="name"> <font size="4" color="green">Your name and surname: </font><font size="4" color="red">* </font></label>
+                </td>
+                <td align="left">
+                    <input type="text" required id="name" name="name" placeholder="Input your data" maxlength="25" size="40"> </td>
+            </tr>
+            <tr height="50" align="center">
+                <td bgcolor="white" width="40"> 2 </td>
+                <td><font size="4" color="green"> Load your photo</font> </td>
+                <td>
+                    <input type="file" name="photo"> </td>
+            </tr>
+            <tr height="50" align="center">
+                <td bgcolor="white"> 3 </td>
+                <td colspan="2" align="center">
+                    <input type="radio" name="gender" value="male"> Male
+                    <input type="radio" name="gender" value="female"> Female
+                    <input type="radio" name="gender" value="other"> Other</td>
+            </tr>
+            <tr height="50" align="center">
+                <td bgcolor="white"> 4 </td>
+                <td><font size="4" color="green"> Date of birth </font><font size="4" color="red">* </font></td>
+                <td align="left">
+                    <input type="date" required name="bday"> </td>
+            </tr>
+            <tr height="50" align="center">
+                <td bgcolor="white"> 5 </td>
+                <td><font size="4" color="green"> E-mail: </font><font size="4" color="red">* </font></td>
+                <td align="left">
+                    <input type="email" required name="email"> </td>
+            </tr>
+            <tr height="50" align="center">
+                <td bgcolor="white"> 6 </td>
+                <td> <font size="4" color="green"> Select your profesion: </font></td>
+                <td align="left">
+                    <input type="radio" name="profi" value="manualTester"> Manual tester
+                    <br>
+                    <input type="radio" name="profi" value="fronetendDeveloper"> Frontend developer
+                    <br>
+                    <input type="radio" name="profi" value="backendDeveloper"> Backend developer</td>
+                </td>
+            </tr>
+            <tr height="50" align="center">
+                <td bgcolor="white"> 7 </td>
+                <td> <font size="4" color="green"> Do you have experience?</font></td>
+                <td>
+                    <select>
+                        <option value="Да">Yes</option>
+                        <option value="Нет">No</option>
+                    </select>
+                </td>
+            </tr>
+            <tr height="50" align="center">
+                <td bgcolor="white"> 8 </td>
+                <td><font size="4" color="green"> Select your softskills: </font></td>
+                <td>
+                    <select multiple size="5">
+                        <option>Communication</option>
+                        <option>Creativity</option>
+                        <option>Determination</option>
+                        <option>Flexibility</option>
+                        <option>Leadership</option>
+                        <option>Presentation</option>
+                        <option>Negotiation</option>
+                        <option>Organization</option>
+                    </select>
+                </td>
+            </tr>
+            <tr height="50" align="center">
+                <td bgcolor="white"> 9 </td>
+                <td><font size="4" color="green"> Select your hardskills:</font></td>
+                <td align="left">
+                    <input type="checkbox" name="skillOne" value="dataAnalysis"> Data Analysis
+                    <br>
+                    <input type="checkbox" name="skillTwo" value="projectManagement"> Project Management
+                    <br>
+                    <input type="checkbox" name="skillThree" value="design"> Design
+                    <br>
+                    <input type="checkbox" name="skillFour" value="cloudComputing"> Cloud Computing
+                    <br>
+                    <input type="checkbox" name="skillFive" value="webDevelopment"> Web Development
+                    <br> </td>
+            </tr>
+            <tr height="50" align="center">
+                <td bgcolor="white"> 10 </td>
+                <td colspan="2" align="center">
+                    <p>Comment
+                        <Br>
+                        <textarea name="comment" cols="80" rows="3"></textarea>
+                    </p>
+                </td>
+            </tr>
+            <tr height="50" align="center">
+                <td colspan="3" align="center">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset"> </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
