@@ -2,55 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,Chrome=1"/>
     <title>Anketa</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<nav>
-    <ul>
-        <li>
-            <ul>
-                <h1>Heading</h1>
-            </ul>
-            <ul>
-                <h2>Link</h2>
-            </ul>
-            <ul>
-                <h2>Link</h2>
-            </ul>
-        </li>
-        <li>
-            <ul>
-                <h1>Heading</h1>
-            </ul>
-            <ul>
-                <h2>Link</h2>
-            </ul>
-            <ul>
-                <h2>Link</h2>
-            </ul>
-        </li>
-        <li>
-            <ul>
-                <h1>Heading</h1>
-            </ul>
-            <ul>
-                <h2>Link</h2>
-            </ul>
-            <ul>
-                <h2>Link</h2>
-            </ul>
-        </li>
-    </ul>
-</nav>
-
-
-<form action="forma.php" method = post>
+<form action="forma.php" method=post>
     <table border="1px" cellspacing="0px" cellpadding="7px">
         <caption>ANKETA</caption>
         <colgroup>
-            <col span = "1" style = "background: burlywood">
-            <col span = "2" style = "background: cadetblue">
+            <col span="1" style="background: burlywood">
+            <col span="2" style="background: cadetblue">
         </colgroup>
         <thead>
             <tr>
@@ -99,7 +61,7 @@
                         <option value="Ternopil">Ternopil</option>
                         <option value="StarCity">StarCity</option>
                     </select>
-                    <input type="text" name="street" id="vylucja"  placeholder = "Street"> <label for="vylucja">Street</label>
+                    <input type="text" name="street" id="vylucja"  placeholder="Street"> <label for="vylucja">Street</label>
                 </td>
             </tr>
             <tr>
@@ -125,6 +87,57 @@
                 <td><label for="passwd">Password</label></td>
                 <td><input type="password" name="password" id="passwd" placeholder="password" tabindex="9"></td>
             </tr>
+            <tr>
+                <td>10</td>
+                <td>
+                    <label for="multi">Мультиселект</label>
+                </td>
+                <td>
+                    <select name="multi" id="multi" multiple>
+                        <option value="1">First</option>
+                        <option value="2">Second</option>
+                        <option value="3">Third</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>
+                    <label for="simpleselect">Простий селект =)</label>
+                </td>
+                <td>
+                    <select name="simpleselect" id="simpleselect" >
+                        <option value="1">Перша позиція</option>
+                        <option value="2">Дпуга позиція</option>
+                        <option value="3">Третя позиція</option>
+                        <option value="4">Четверта позиція</option>
+                        <option value="5">Пята позиція</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>
+                    <label for="groupselect">Селект з групами</label>
+                </td>
+                <td>
+                    <select name="groupselect" id="groupselect" groupselect>
+                        <optgroup label="Group1">
+                            <option value="1">Перша позиція</option>
+                            <option value="2">Друга позиція</option>
+                            <option value="3">Третя позиція</option>
+                        </optgroup>
+                        <optgroup label="Group2">
+                            <option value="3">Четверта позиція</option>
+                            <option value="4">Пята позиція</option>
+                            <option value="5">Шоста позиція</option>
+                        </optgroup>
+
+                    </select>
+                </td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
@@ -148,20 +161,5 @@
         </tfoot>
     </table>
 </form>
-
-
-
-
-
-<ul>
-    <li>Heading</li>
-    <li>item1</li>
-    <li>item2</li>
-    <li>Heading2</li>
-    <li>item1</li>
-    <li>item2</li>
-</ul>
-
-
 </body>
 </html>
