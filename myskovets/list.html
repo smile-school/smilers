@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<ul>
+    <li class="rrr">
+        <h2>
+            Title 1
+        </h2>
+    </li>
+    <li><p>Item1</p></li>
+    <li><p>Item1</p></li>
+    <li><p>Item1</p></li>
+    <li><p>Item1</p></li>
+    <li><p>Item1</p></li>
+    <li class="rrrr">
+        <h2>
+            Title 2
+        </h2>
+    </li>
+    <li><p>Item1</p></li>
+    <li><p>Item1</p></li>
+    <li><p>Item1</p></li>
+    <li><p>Item1</p></li>
+    <li><p>Item1</p></li>
+    <li class="rrrrr">
+        <h2>
+            Title 3
+        </h2>
+    </li>
+    <li><p>Item1</p></li>
+    <li><p>Item1</p></li>
+    <li><p>Item1</p></li>
+    <li><p>Item1</p></li>
+    <li><p>Item1</p></li>
+</ul>
+</body>
+</html>
+
+<style>
+li + li h2 {
+    margin-top: 10px;
+}
+    .ss ~ li:nth-child(-n+6) {
+        /*перші 6*/
+        color: red;
+    }
+    .ss:hover ~ li:nth-child(-n+6) {
+        background-color: red;
+    }
+    .ss:hover + li p P{
+        color: white;
+        /*тільки перша лішка*/
+    }
+    .aa ~ li:nth-child(n+7) :not(:ntls-last-child(n+6)) {
+        /*вибрав починаючи з 7 лішки кожну першу, потім виключив із правила пергі 6 правилом "нот"*/
+        background-color: grey;
+    }
+    .bb ~ li {
+        /*якщо знаємо кількість заголовків*/
+        /*всі лі які після ББ - фарбуємо*/
+        background-color: blue;
+    }
+    li + li h2 {
+        margin-top: 30px;
+    }
+
+
+
+</style>
