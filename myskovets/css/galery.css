@@ -1,0 +1,49 @@
+.galerywrapper {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: lightgreen;
+    padding: 20px;
+    clear: both;
+}
+a {
+    width: calc(30%);
+    text-decoration: none;
+    display: block;
+    float: left;
+    position: relative;
+}
+img {
+    display: block;
+    width: 100%;
+    z-index: 2;
+}
+a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0, .2);
+
+    display: none;
+}
+a:hover::before, a:hover::after {
+    display: block;
+}
+a::after {
+    content: '';
+    transform: translate(-50%, -50%);
+    background: url("../ima/eye.svg");
+    background-size: contain;
+    z-index: 1;
+    display: none;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+
+/*Чому афтер і біфор чіпляєм до тегу А а не до ІМГ?*/
