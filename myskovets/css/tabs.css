@@ -1,35 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 .wrapper {
     width: 900px;
     margin: 0 auto;
+    background-color: grey;
+    padding: 10px;
+}
+.wrapper-horizontal {
     padding: 20px;
     position: relative;
     background-color: lightgreen;
 }
-.tabwrapper {
+.wrapper-horizontal .tabwrapper {
     display: inline-block;
 }
-
-input, input ~ .tabcontent {
+.wrapper-horizontal input {
+    display: none;
+}
+.wrapper-horizontal input ~ .tabcontent {
     display: none;
     background-color: green;
     width: calc(100% - 40px);
     padding: 20px;
 }
-label  {
+.wrapper-horizontal label  {
     display: block;
     padding: 10px;
     background-color: grey;
     margin-right: 20px;
 }
-/*!!а тут це кляте місце!!*/
-label {
-    margin-left: 200px;
-}
-input:checked ~ .tabcontent {
+/*/!а тут це кляте місце, де перший лейбл ніяк не отримує лівий марджин!!*/
+/*.wrapper-horizontal label {*/
+/*    margin-left: 200px;*/
+/*}*/
+.wrapper-horizontal input:checked ~ .tabcontent {
     display: block;
     position: absolute;
     left: 0;
 }
-input:checked ~ label {
+.wrapper-horizontal input:checked ~ label {
     background-color: green;
+}
+/*//////////////ВЕРТИКАЛЬНІ ТАБИ///////////////*/
+.wrapper-vertical {
+    width: 300px;
+    padding: 20px;
+    position: relative;
+    background-color: lightgreen;
+}
+.wrapper-vertical label {
+    display: block;
+    padding: 10px;
+    background-color: darkolivegreen;
+}
+.wrapper-vertical label:nth-child(n):not(3){
+    border-bottom: 2px white solid;
+}
+.wrapper-vertical ul {
+    list-style-type: none;
+    padding: 0;
+}
+.wrapper-vertical input {
+    display: none;
+}
+.wrapper-vertical input ~ .tabcontent {
+    display: none;
+}
+.wrapper-vertical input:checked ~ .tabcontent {
+    display: block;
+}
+.wrapper-vertical li {
+    padding: 5px;
+}
+.wrapper-vertical li:hover {
+    background-color: darkgreen;
 }

@@ -15,7 +15,7 @@
     "url": "#prod-1"
   },
   {
-    "img": "base.19879_1.jpg",
+    "img": "./ima/2.png",
     "title": "Cooling Gel Eye Mask",
     "rating": 90,
     "price": {
@@ -30,7 +30,7 @@
     "url": "#prod-2"
   },
   {
-    "img": "base.46910.jpg",
+    "img": "./ima/3.png",
     "title": "Secrets of the World Indian Turtle Massager",
     "rating": 60,
     "price": {
@@ -45,7 +45,7 @@
     "url": "#prod-3"
   },
   {
-    "img": "base.82485_1.jpg",
+    "img": "./ima/4.png",
     "title": "Facial Massager",
     "rating": 70,
     "price": {
@@ -60,7 +60,7 @@
     "url": "#prod-4"
   },
   {
-    "img": "base.99966.jpg",
+    "img": "./ima/5.png",
     "title": "English Dawn Gardenia Fragrance Mist",
     "rating": 65,
     "price": {
@@ -75,7 +75,7 @@
     "url": "#prod-5"
   },
   {
-    "img": "base.d-45738_1.jpg",
+    "img": "./ima/6.png",
     "title": "Black Musk Fragrance Mist",
     "rating": 95,
     "price": {
