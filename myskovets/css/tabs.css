@@ -1,6 +1,7 @@
 .wrapper {
     width: 900px;
     margin: 0 auto;
+    padding: 20px;
     position: relative;
     background-color: lightgreen;
 }
@@ -10,14 +11,25 @@
 
 input, input ~ .tabcontent {
     display: none;
+    background-color: green;
+    width: calc(100% - 40px);
+    padding: 20px;
 }
 label  {
     display: block;
-    margin: 20px;
     padding: 10px;
-    background-color: green;
+    background-color: grey;
+    margin-right: 20px;
+}
+/*!!а тут це кляте місце!!*/
+label {
+    margin-left: 200px;
 }
 input:checked ~ .tabcontent {
     display: block;
     position: absolute;
+    left: 0;
+}
+input:checked ~ label {
+    background-color: green;
 }
