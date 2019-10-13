@@ -1,6 +1,6 @@
 [
   {
-    "img": "base.12911.jpg",
+    "img": "./ima/1.png",
     "title": "Oils Of Life™ Twin-Ball Facial Roller",
     "rating": 10,
     "price": {
@@ -88,65 +88,5 @@
       "new": false
     },
     "url": "#prod-6"
-  },
-  {
-    "img": "base.d-81125.jpg",
-    "title": "White Musk® L'Eau Fragrance Mist",
-    "rating": 83,
-    "price": {
-      "finalPrice": 390,
-      "oldPrice": 390
-    },
-    "actions": {
-      "bestsellers": false,
-      "eco": true,
-      "new": false
-    },
-    "url": "#prod-7"
-  },
-  {
-    "img": "c25276.jpg",
-    "title": "Strawberry Clearly Glossing Conditioner Strawberry",
-    "rating": 5,
-    "price": {
-      "finalPrice": 550,
-      "oldPrice": 1100
-    },
-    "actions": {
-      "bestsellers": false,
-      "eco": false,
-      "new": false
-    },
-    "url": "#prod-8"
-  },
-  {
-    "img": "sourcefile_1078704_1_hand-wash-strawberry-l-e-250ml-a0x_brnz_inneqps018.jpg",
-    "title": "Oils of Life™ Intensely Revitalising Facial Oil",
-    "rating": 100,
-    "price": {
-      "finalPrice": 452,
-      "oldPrice": 452
-    },
-    "actions": {
-      "bestsellers": false,
-      "eco": false,
-      "new": false
-    },
-    "url": "#prod-9"
-  },
-  {
-    "img": "93493_1.jpg",
-    "title": "Aloe Eye Defence",
-    "rating": 44,
-    "price": {
-      "finalPrice": 250,
-      "oldPrice": 500
-    },
-    "actions": {
-      "bestsellers": false,
-      "eco": false,
-      "new": false
-    },
-    "url": "#prod-10"
   }
 ]

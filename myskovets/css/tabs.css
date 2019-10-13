@@ -1,0 +1,23 @@
+.wrapper {
+    width: 900px;
+    margin: 0 auto;
+    position: relative;
+    background-color: lightgreen;
+}
+.tabwrapper {
+    display: inline-block;
+}
+
+input, input ~ .tabcontent {
+    display: none;
+}
+label  {
+    display: block;
+    margin: 20px;
+    padding: 10px;
+    background-color: green;
+}
+input:checked ~ .tabcontent {
+    display: block;
+    position: absolute;
+}
