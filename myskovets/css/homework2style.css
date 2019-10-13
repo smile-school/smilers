@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.dropdown {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+nav ul > li {
+    display: inline-block;
+    position: relative;
+}
+ul li ul {
+    position: absolute;
+    display: none;
+}
+ul li:hover > ul {
+    display: block;
+}

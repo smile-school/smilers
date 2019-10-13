@@ -1,0 +1,87 @@
+<?php
+
+include_once 'Product.php';
+
+$block = new Product();
+
+function choose_star_icon($val) {
+    if ($val <= 0.5) return "ima/star-half.png";
+    else return "ima/filled-star.png";
+}
+
+?><!DOCTYPE html>
+<html>
+<head>
+    <title>CATALOG</title>
+
+    <style type="text/css">
+        .wrapper {
+            width: 1000px;
+            margin: 0 auto;
+        }
+        .product-card {
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            display: inline-block;
+            width: 200px;
+            /*text-align: center;*/
+            margin: 4px;
+            position: relative;
+        }
+        .product-card p.price {
+            color: gray;
+            font-size: 22px;
+        }
+        .product-card a {
+            color: white;
+            background-color: #000;
+            display: block;
+            font-size: 18px;
+            text-decoration: none;
+            padding: 8px 0;
+        }
+        .product-card img.product-icon {
+            width: 100%;
+            height: 200px;
+        }
+        .product-card img.sticker {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 0px;
+            left: 150px;
+        }
+
+        .product-card h1 {
+            height: 200px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <?php foreach ($block->getData() as $p): ?>
+        <div class="product-card">
+            <img class="product-icon" src="<?= $p['img'] ?>">
+            <?php if ($p['actions']['new']): ?>
+                <img src="https://www.shareicon.net/data/512x512/2015/09/18/642590_new_512x512.png" class="sticker">
+            <?php endif; ?>
+            <?php if ($p['actions']['eco']): ?>
+                <img src="https://thumbs.dreamstime.com/b/eco-friendly-fresh-healthy-organic-vegan-food-badge-vector-hand-drawn-illustration-vegetarian-eco-green-concept-eco-friendly-fresh-158381225.jpg" class="sticker">
+            <?php endif; ?>
+            <?php if ($p['actions']['bestsellers']): ?>
+                <img src="https://freepngimg.com/download/best_seller/6-2-best-seller-png-clipart.png" class="sticker">
+            <?php endif; ?>
+            <h1><?= $p['title'] ?></h1>
+            <p class="price"><span>$<?= $p['price']['finalPrice'] ?>.00</span>&nbsp;<span><s>$<?= $p['price']['oldPrice'] ?>.00</s></span></p>
+            <p>
+                <?php $stars = $p['rating'] / 20; ?>
+                <?php for (; $stars >= 0; $stars--): ?>
+                    <img src="<?= choose_star_icon($stars) ?>">
+                <?php endfor; ?>
+            </p>
+            <a href="#">Add to Cart</a>
+        </div>
+    <?php endforeach; ?>
+</div>
+</body>
+</html>
